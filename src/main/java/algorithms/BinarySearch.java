@@ -4,22 +4,21 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class SearchBinary {
+public class BinarySearch {
 
     public static void main(String[] args) {
         int target = 7;
         List<Integer> arr = new ArrayList<>(Arrays.asList(1, 2, 3, 4, 5, 6, 7));
 
-        int res = new SearchBinary().binarySearch(arr, target);
+        int res = new BinarySearch().binarySearch(arr, target);
         System.out.println(res);
     }
 
     public Integer binarySearch(List<Integer> arr, int target) {
         int left = 0;
-        int right = arr.size() - 1;
+        int right = arr.size();
 
         // for odd list size
-        if (arr.size() % 2 != 0 && arr.get(right).equals(target)) return right;
         while (left < right) {
             int mid = (left + right) / 2;
             if (arr.get(mid).equals(target)) {

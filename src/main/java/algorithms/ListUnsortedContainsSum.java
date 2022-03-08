@@ -9,7 +9,7 @@ import java.util.List;
 public class ListUnsortedContainsSum {
 
     public static void main(String[] args) {
-        List<Integer> l = new ArrayList<>(Arrays.asList(4, 6, 2, 1, 3, 9, 1, 6, 10, 5, 7, 8, 10));
+        List<Integer> l = new ArrayList<>(Arrays.asList(4, 6, 2, -1, 3, 9, 1, 6, 10, 5, 7, 8, 10));
         int sum = 8;
 
         HashSet<List<Integer>> res = isSumFoundInList(l, sum);
