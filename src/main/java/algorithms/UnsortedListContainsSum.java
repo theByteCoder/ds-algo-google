@@ -6,7 +6,7 @@ import java.util.HashSet;
 import java.util.Hashtable;
 import java.util.List;
 
-public class ListUnsortedContainsSum {
+public class UnsortedListContainsSum {
 
     public static void main(String[] args) {
         List<Integer> l = new ArrayList<>(Arrays.asList(4, 6, 2, -1, 3, 9, 1, 6, 10, 5, 7, 8, 10));
