@@ -30,9 +30,9 @@ public class MergeSort {
         int R[] = new int[rightSubArraySize];
 
         /*Copy data to temp arrays*/
-        for (int i = 0; i < leftSubArraySize; ++i)
+        for (int i = 0; i < leftSubArraySize; i++)
             L[i] = arr[left + i];
-        for (int j = 0; j < rightSubArraySize; ++j)
+        for (int j = 0; j < rightSubArraySize; j++)
             R[j] = arr[mid + 1 + j];
 
         /* Merge the temp arrays */
